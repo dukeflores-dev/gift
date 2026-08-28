@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const messageEl = document.getElementById('message');
   const changeTextBtn = document.getElementById('changeTextBtn');
   const burstBtn = document.getElementById('burstBtn');
-  const smileyWrap = document.querySelector('.smiley-wrap');
+  const heartWrap = document.querySelector('.heart-wrap');
 
   const messages = [
     {
@@ -75,12 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
   changeTextBtn.addEventListener('click', updateMessage);
 
   burstBtn.addEventListener('click', () => {
-    smileyWrap.classList.remove('burst');
-    void smileyWrap.offsetWidth;
-    smileyWrap.classList.add('burst');
+    heartWrap.classList.remove('burst');
+    void heartWrap.offsetWidth;
+    heartWrap.classList.add('burst');
 
     setTimeout(() => {
-      smileyWrap.classList.remove('burst');
+      heartWrap.classList.remove('burst');
     }, 900);
   });
 });
