@@ -73,6 +73,7 @@ h1 {
   margin: 0;
   font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.15;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 p {
@@ -81,6 +82,12 @@ p {
   font-size: 1.02rem;
   line-height: 1.7;
   color: rgba(60, 32, 64, 0.88);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
 }
 
 .heart-wrap {

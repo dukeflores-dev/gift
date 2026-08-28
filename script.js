@@ -59,9 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
   let index = 0;
 
   function updateMessage() {
-    index = (index + 1) % messages.length;
-    titleEl.textContent = messages[index].title;
-    messageEl.textContent = messages[index].text;
+    titleEl.classList.add('fade-out');
+    messageEl.classList.add('fade-out');
+
+    setTimeout(() => {
+      index = (index + 1) % messages.length;
+      titleEl.textContent = messages[index].title;
+      messageEl.textContent = messages[index].text;
+
+      titleEl.classList.remove('fade-out');
+      messageEl.classList.remove('fade-out');
+    }, 300);
   }
 
   changeTextBtn.addEventListener('click', updateMessage);
