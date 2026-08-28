@@ -101,8 +101,8 @@ p {
 .heart {
   position: absolute;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--rose);
-  text-shadow: 0 8px 20px rgba(255, 77, 141, 0.3);
+  color: #ffd700;
+  text-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
   animation: floatUp 3.4s ease-in-out infinite;
 }
 
