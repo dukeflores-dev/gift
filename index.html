@@ -3,22 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Facebook Post</title>
+    <title>For you</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="embed-wrap">
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F1CATmNEKS1%2F&show_text=true&width=500"
-        width="500"
-        height="700"
-        style="border:none;overflow:hidden"
-        scrolling="no"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
+    <div class="container">
+      <div class="heart-bg" aria-hidden="true"></div>
+
+      <main class="message-card">
+        <div class="header-badge">❤ A little Gift for you Nica</div>
+
+        <h1 id="title">"Proverbs 3:6"</h1>
+
+        <p id="message">
+          "God is Guiding your next step." — Proverbs 3:6
+        </p>
+
+        <div class="heart-wrap" aria-label="Animated heart" role="img">
+          <div class="heart heart-1">❤</div>
+          <div class="heart heart-2">❤</div>
+          <div class="heart heart-3">❤</div>
+          <div class="heart heart-4">❤</div>
+          <div class="heart heart-5">❤</div>
+        </div>
+
+        <div class="actions">
+          <button id="changeTextBtn" type="button">Change message</button>
+          <button id="burstBtn" class="secondary" type="button">Burst hearts</button>
+        </div>
+      </main>
     </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
